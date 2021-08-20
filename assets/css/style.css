@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #e73c7e, #ae31d9);
+    box-shadow: 0px 1px 10px black;
+}
+
+.card .img-card img{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card .dev-desc{
+    color: white;
+}
+
+.dev-desc h1, p{
+    margin-top: 20px;
+}
+
+.dev-desc h1{
+    font-size: 35px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+.dev-desc h2{
+    
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.dev-desc p{
+    font-size: 17px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.contact a{
+    margin: 10px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.contact a:hover{
+    transition: all 1s ease;
+    background-color: white;
+    color: #ae31d9;
+    border: 2px solid #ae31d9;
+}
+
+
